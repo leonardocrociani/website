@@ -9,7 +9,7 @@ export const About = () => {
             <div className="flex flex-col gap-4">
                 <div>
                     I am a software engineer with a strong inclination towards AI.
-                    I'm the creator of <Link
+                    I&apos;m the creator of <Link
                         target="_blank"
                         href='https://appuntiexpress.com'>
                         appuntiexpress.com
@@ -18,11 +18,11 @@ export const About = () => {
                         href="https://sbobinare.app">
                         sbobinare.app
                     </Link>.
-                    I work to ease people's lives.
+                    I work to ease people&apos;s lives.
                 </div>
                 <div>
-                    I'm pursuing a Master's Degree in Computer Science at the University of Pisa.
-                    Working on a thesis on the intersection of AI and venture capital, collaborating with <Link
+                    I&apos;m pursuing a Master&apos;s Degree in Computer Science at the University of Pisa,
+                    working on a thesis on the intersection of AI and venture capital, collaborating with <Link
                         className="text-blue-500 hover:text-blue-700"
                         target="_blank"
                         href='https://obloo.vc'>
@@ -43,7 +43,7 @@ export const About = () => {
             </div>
         </div>
         <div>
-            I currently work part-time for my father's company, <Link 
+            I currently work part-time for my father&apos;s company, <Link 
             target="_blank" 
             href='https://micronetonline.it'>micronet</Link>,
             where I find software solutions to clients problems.
