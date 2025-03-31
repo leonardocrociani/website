@@ -5,7 +5,7 @@ import Link from "next/link"
 export const About = () => {
     return <Section>
         <SectionTitle>about</SectionTitle>
-        <div className="flex justify-between gap-4">
+        <div className="flex justify-between gap-4 md:flex-row flex-col-reverse">
             <div className="flex flex-col gap-4">
                 <div>
                     I am a software engineer with a strong inclination towards AI.
@@ -36,7 +36,7 @@ export const About = () => {
                     alt="Leonardo Crociani"
                     width={350}
                     height={350}
-                    className="rounded-full bg-gray-100 block mx-auto grayscale hover:grayscale-0 transition-all duration-200 ease-in-out"
+                    className="rounded-full md:mb-0 mb-4 bg-gray-100 block mx-auto grayscale hover:grayscale-0 transition-all duration-200 ease-in-out"
                     priority={true}
                     loading="eager"
                 />
