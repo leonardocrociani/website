@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Section, SectionTitle } from "../elements/section";
+import kv from "@/lib/frontend/kv";
 
 export const Reading = () => {
     return <Section>
@@ -9,7 +10,10 @@ export const Reading = () => {
                 href={'https://amzn.to/4i00X6y'}
                 about="_blank">
                 four steps to the epiphany
-            </Link>&nbsp;by Steve Blank.
+            </Link>&nbsp;
+            <span className="mono text-gray-400 text-sm">
+                ({kv.get('book-percentage', 0)}%)
+            </span>&nbsp;by Steve Blank.
         </div>
     </Section>
 }
