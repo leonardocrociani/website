@@ -12,7 +12,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Leonardo Crociani",
-  description: "Portfolio of Leonardo Crociani",
+  description: "Leonardo Crociani's personal website",
+  openGraph: {
+    images: [
+      {
+        url: "https://crociani.co/me.png",
+        width: 400,
+        height: 400,
+        alt: "Leonardo Crociani's personal website",
+      },
+    ]
+  }
 };
 
 export default async function RootLayout({
