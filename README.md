@@ -30,3 +30,9 @@ Deploy the website with:
 ```bash
 npm run start
 ```
+or, using pm2:
+```bash
+pm2 restart ecosystem.config.js
+```
+
+Make sure to check the env variables within the config file.
