@@ -16,12 +16,6 @@ export const About = () => {
                             className="text-blue-500 hover:text-blue-700"
                         >
                             appuntiexpress.com
-                        </Link> and <Link 
-                            target="_blank" 
-                            href="https://sbobinare.app"
-                            className="text-blue-500 hover:text-blue-700"
-                        >
-                            sbobinare.app
                         </Link>. 
                         I work to ease people&apos;s lives.
                     </div>
