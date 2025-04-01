@@ -54,7 +54,7 @@ export const About = () => {
                     className="text-blue-500 hover:text-blue-700"
                 >
                     Micronet
-                </Link>, where I find software solutions to clients' problems.
+                </Link>, where I find software solutions to clients&apos; problems.
             </div>
         </Section>
     );
