@@ -1,5 +1,7 @@
+import approximate from 'approximate-number';
+
 interface KVClient {
-    get: <T>(key: string, defaultValue?: T) => Promise<T | null>
+    get: <T>(key: string, defaultValue?: T, approximateNumber?: boolean) => Promise<T | string | null>
     set: (key: string, value: any) => Promise<void>
     increment: (key: string, amount?: number) => Promise<number>
 }
@@ -14,7 +16,7 @@ class KV implements KVClient {
     /**
      * Get a value from storage
      */
-    async get<T>(key: string, defaultValue?: T): Promise<T | null> {
+    async get<T>(key: string, defaultValue?: T, approximateNumber?: boolean): Promise<T | string | null> {
         try {
             const response = await fetch(`${this.baseUrl}/${key}`)
 
@@ -23,7 +25,11 @@ class KV implements KVClient {
             }
 
             const data = await response.json()
-            return data.value ?? defaultValue ?? null
+            const value = data.value ?? defaultValue ?? null
+            if (approximateNumber) {
+                return approximate(value) as string;
+            }
+            return value as T;
         } catch (error) {
             console.error(`Error getting value for key ${key}:`, error)
             return defaultValue || null

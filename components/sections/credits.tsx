@@ -6,7 +6,7 @@ export const Credits = async () => {
         <div className="w-full text-start">
             Leonardo Crociani
         </div>
-        <div className="w-full text-center">{kv.get('home-page-views', 0)} views</div>
+        <div className="w-full text-center">{kv.get('home-page-views', 0, true)} views</div>
         <div className="w-full text-end">
             <Link
                 target="_blank"
