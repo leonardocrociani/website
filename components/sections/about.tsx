@@ -5,7 +5,7 @@ import Link from "next/link";
 export const About = () => {
     return (
         <Section>
-            <SectionTitle>About</SectionTitle>
+            <SectionTitle>about</SectionTitle>
             <div className="flex justify-between gap-4 md:flex-row flex-col-reverse">
                 <div className="flex flex-col gap-4">
                     <div>
