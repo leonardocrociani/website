@@ -16,7 +16,7 @@ export const Header = () => {
                 blog
             </Link> */}
             <Link
-                href="mailto:info@crociani.co"
+                href="mailto:l.crociani@outlook.com"
                 className="mono">
                 email
             </Link>
