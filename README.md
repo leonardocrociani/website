@@ -9,7 +9,7 @@ Create and fill a file named ".env" in the root folder of the project with your 
 ```env
 UPSTASH_REDIS_REST_URL="******"
 UPSTASH_REDIS_REST_TOKEN="******"
-HOST_URL="******"
+HOST_URL="******" # e.g. https://crociani.co/
 ```
 
 ---
