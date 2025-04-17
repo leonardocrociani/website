@@ -5,7 +5,7 @@ export const Header = () => {
         <Link
             className="no-underline"
             href="/">
-            <h1 className="font-bold text-black text-2xl tracking-tighter">
+            <h1 className="font-bold text-black dark:text-white text-2xl tracking-tighter">
                 Leonardo Crociani
             </h1>
         </Link>
