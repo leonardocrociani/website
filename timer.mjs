@@ -60,8 +60,8 @@ const report = async () => {
     console.log('\nTotal Sessions:\t', sessions.length);
 }
 
-createIfNotExists();
-fillIfEmpty();
+await createIfNotExists();
+await fillIfEmpty();
 
 const COMMAND = process.argv[2];
 
