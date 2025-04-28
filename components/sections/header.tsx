@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { PreciseAge } from "../elements/precise-age"
 
 export const Header = () => {
     return <div className="flex items-center justify-between">
@@ -11,7 +10,6 @@ export const Header = () => {
                     Leonardo Crociani
                 </h1>
             </Link>
-            <PreciseAge birthDate={new Date('14/10/2021')}/>
         </div>
         <div className="flex gap-4">
             {/* <Link
