@@ -9,7 +9,7 @@ interface KVClient {
 class KV implements KVClient {
     private baseUrl: string
 
-    constructor(baseUrl = process.env.HOST_URL + "/api/kv") {
+    constructor(baseUrl = (process.env.HOST_URL ?? '') + "/api/kv") {
         this.baseUrl = baseUrl;
     }
 

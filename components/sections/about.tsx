@@ -9,30 +9,33 @@ export const About = () => {
             <div className="flex justify-between gap-4 md:flex-row flex-col-reverse">
                 <div className="flex flex-col gap-4">
                     <div>
-                        I am a software engineer with a strong inclination towards AI. 
-                        I&apos;m the creator of <Link 
-                            target="_blank" 
+                        I&apos;m a builder with a strong passion for creating impactful products.
+                        I&apos;m the creator of{" "}
+                        <Link
+                            target="_blank"
                             href="https://appuntiexpress.com"
                             className="text-blue-500 hover:text-blue-700"
                         >
                             appuntiexpress.com
-                        </Link> and <Link 
-                            target="_blank" 
+                        </Link>{" "}
+                        and{" "}
+                        <Link
+                            target="_blank"
                             href="https://sbobinare.app"
                             className="text-blue-500 hover:text-blue-700"
                         >
                             sbobinare.app
-                        </Link>. 
-                        I work to ease people&apos;s lives.
+                        </Link>.
                     </div>
                     <div>
-                        I&apos;m pursuing a Master&apos;s degree in Artificial Intelligence (CS Dept.) at the University of Pisa, 
-                        working on a thesis at the intersection of AI and venture capital, collaborating with <Link 
-                            target="_blank" 
-                            href="https://obloo.vc" 
+                        I earned both my Bachelor&apos;s and Master&apos;s degrees at the University of Pisa, graduating <i>cum laude</i> (110/110 with honors) in Computer Science and Artificial Intelligence.
+                        You can read my Master&apos;s thesis here:{" "}
+                        <Link
+                            target="_blank"
+                            href="https://etd.adm.unipi.it/theses/available/etd-06252025-142712/unrestricted/Master_Thesis.pdf"
                             className="text-blue-500 hover:text-blue-700"
                         >
-                            obloo.vc
+                            Master Thesis
                         </Link>.
                     </div>
                 </div>
@@ -48,13 +51,11 @@ export const About = () => {
                 </div>
             </div>
             <div>
-                I currently work part-time for my father&apos;s company, <Link 
-                    target="_blank" 
-                    href="https://micronetonline.it"
-                    className="text-blue-500 hover:text-blue-700"
-                >
-                    Micronet
-                </Link>, where I find software solutions to clients&apos; problems.
+                <p className="mb-1">Currently:</p>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>Software Engineer @ Micronet</li>
+                    <li>Founder of <strong>Ospix</strong> - an AI-powered platform for automated guest registration</li>
+                </ul>
             </div>
         </Section>
     );

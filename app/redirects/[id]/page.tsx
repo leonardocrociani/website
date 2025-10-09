@@ -12,5 +12,4 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         // You can redirect to a 404 page or show an error message
         redirect("/404");
     }
-    return null;
 }
