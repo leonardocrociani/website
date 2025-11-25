@@ -15,12 +15,12 @@ export const Citations = ({
                     citations.map(({ citation, source }, index) => (
                         <div
                             key={index}
-                            className="border-s-2 border-gray-200 ps-5 text-gray-800"
+                            className="border-s-2 border-gray-200 ps-5 text-gray-800 dark:border-gray-200"
                         >
                             <p className="text-sm leading-relaxed font-light">
                                 “{citation}”
                             </p>
-                            <p className="mt-1 text-xs text-gray-500 font-light">
+                            <p className="mt-1 text-xs text-gray-500 font-light dark:text-gray-300">
                                 - {source}
                             </p>
                         </div>

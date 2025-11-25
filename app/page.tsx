@@ -13,7 +13,7 @@ export default async function Page() {
 
     return <div className="flex flex-col gap-8">
         <About />
-        <Reading books={books} />
+        {/* <Reading books={books} /> */}
         <Citations citations={citations} />
     </div>
 }

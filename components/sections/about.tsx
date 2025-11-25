@@ -25,7 +25,7 @@ export const About = () => {
                             className="text-blue-500 hover:text-blue-700"
                         >
                             sbobinare.app
-                        </Link>.
+                        </Link>. I&apos;m currently a Software Engineer at <Link target="_blank" href="https://bendingspoons.com" className="text-blue-500 hover:text-blue-700">Bending Spoons</Link>.
                     </div>
                     <div>
                         I earned both my Bachelor&apos;s and Master&apos;s degrees at the University of Pisa, graduating <i>cum laude</i> (110/110 with honors) in Computer Science and Artificial Intelligence.
@@ -50,13 +50,12 @@ export const About = () => {
                     />
                 </div>
             </div>
-            <div>
+            {/* <div>
                 <p className="mb-1">Currently:</p>
                 <ul className="list-disc list-inside space-y-1">
-                    <li>Software Engineer @ Micronet</li>
-                    <li>Founder of <strong>Ospix</strong> - an AI-powered platform for automated guest registration</li>
+                    <li>Software Engineer @ Bending Spoons</li>
                 </ul>
-            </div>
+            </div> */}
         </Section>
     );
 };
